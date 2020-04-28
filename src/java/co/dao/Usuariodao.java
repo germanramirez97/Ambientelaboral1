@@ -20,6 +20,8 @@ public class Usuariodao implements validar{
 
     @Override
     public int validar(Usuario usu) {
+        
+        int r=0;
        String sql="Select * from login where usuario=? and contraseña=? ";
         try {
            c=cn.getConnection();

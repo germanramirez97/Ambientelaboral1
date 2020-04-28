@@ -19,8 +19,7 @@
                
                 <div class="dropdown-menu text-center">
                     
-                    <a>user</a>
-                    <a>example@hotmail.com</a>
+                    <a>${usu}</a>
                     <div class="dropdown-divider"></div>
                     <a href="index.jsp" class="dropdown-item">Salir</a>
                     
@@ -30,7 +29,7 @@
            </div>  
         </nav>
         <div class="container mt-4"
-             <h1>Bienvenido al sistema...<strong>Usuario</strong></h1>
+             <h1>Bienvenido al sistema...<strong>Usuario ${usu}</strong></h1>
         
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -15,10 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author Nubia
- */
+
 @WebServlet(name = "controlador", urlPatterns = {"/controlador"})
 public class controlador extends HttpServlet {
     Usuariodao dao= new Usuariodao();
@@ -38,10 +35,12 @@ public class controlador extends HttpServlet {
             p.setContra(contra);
             dao.validar(p);
             if(r==1){
+                request.getSession().setAttribute("usu", usu);
+                request.getSession().setAttribute("contra",contra);
                 request.getRequestDispatcher("Principal.jsp").forward(request, response);
                 
              }else{
-                request.getRequestDispatcher("Principal.jsp").forward(request, response);
+                request.getRequestDispatcher("index.jsp").forward(request, response);
             }
         }
     }
