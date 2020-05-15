@@ -20,6 +20,14 @@ public class Usuario {
     public Usuario() {
     }
 
+    public Usuario(String usuario, String contra, String nombre, String apellido, int cedula) {
+        this.usuario = usuario;
+        this.contra = contra;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+    }
+
     
     public String getUsuario() {
         return usuario;

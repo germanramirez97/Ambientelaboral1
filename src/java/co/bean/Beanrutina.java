@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.servicios;
+package co.bean;
 
 /**
  *
- * @author Eduardo
+ * @author german
  */
-public class Rutina {
+public class Beanrutina {
     
 }

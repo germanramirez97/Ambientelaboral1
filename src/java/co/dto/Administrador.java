@@ -5,6 +5,8 @@
  */
 package co.dto;
 
+import java.util.logging.Logger;
+
 /**
  *
  * @author Eduardo
@@ -16,6 +18,20 @@ public class Administrador {
     private String nombreadm;
     private String apellidoadm;
     private int cedula;
+    
+    
+
+    public Administrador(String usuarioadm, String contraadm, String nombreadm, String apellidoadm, int cedula) {
+        this.usuarioadm = usuarioadm;
+        this.contraadm = contraadm;
+        this.nombreadm = nombreadm;
+        this.apellidoadm = apellidoadm;
+        this.cedula = cedula;
+    }
+  
+    
+    
+    
 
     public String getUsuarioadm() {
         return usuarioadm;
